@@ -12,6 +12,7 @@ Desarrollar un producto mínimo viable (MVP) en entorno web para la gestión de 
 ## 👥 Integrantes y Roles
 * **Jhoel Ricardo Pita Silva** - Desarrollador Backend / Base de Datos
 * **Yury Vasquez** - Desarrollador Frontend / Documentación
+* **Julio Lara Laura** - Integrante
 
 ## 📁 Estructura del Repositorio
 * `/docs/proyecto/`: Documento formal del proyecto.
