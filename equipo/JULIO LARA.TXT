@@ -1,0 +1,4 @@
+Nombre: JULIO LARA
+Apellido: LARA LAURA
+Grupo: Equipo N° X
+Rol o responsabilidad principal: Programador principal
