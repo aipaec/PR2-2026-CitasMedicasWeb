@@ -10,9 +10,9 @@ Dificultad y tiempos de espera prolongados en la programación de citas médicas
 Desarrollar un producto mínimo viable (MVP) en entorno web para la gestión de pacientes, médicos, especialidades y programación de citas médicas.
 
 ## 👥 Integrantes y Roles
-* **Jhoel Ricardo Pita Silva** - Desarrollador Backend / Base de Datos
-* **Yury Vasquez** - Desarrollador Frontend / Documentación
-* **Julio Lara Laura** - Integrante
+* **Julio Lara Laura** - Programador Principal
+* **Yury Sebastián Vasquez** - Diseñador de Interfaces
+* **Jhoel Ricardo Pita Silva** - Encargado de Base de Datos
 
 ## 📁 Estructura del Repositorio
 * `/docs/proyecto/`: Documento formal del proyecto.
