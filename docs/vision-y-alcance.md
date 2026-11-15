@@ -48,4 +48,4 @@ No se da por confirmada ninguna integración externa, despliegue público, pasar
 
 ## 8. Estado
 
-Documento inicial basado en el README y el script SQL disponibles en el repositorio. Debe revisarse frente al documento de requisitos y al código de la aplicación cuando este se publique.
+Documento elaborado a partir del README, el script de base de datos, el documento de requisitos y la estructura actual del código fuente publicado en `src/OSCORP.Web/`. Debe seguir revisándose conforme avance el desarrollo y se compruebe el funcionamiento de la aplicación.
