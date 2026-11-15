@@ -1,0 +1,23 @@
+@model ScheduleViewModel
+@{ ViewData["Title"] = "Crear horario"; }
+<div class="form-card">
+<h1>Crear horario médico</h1>
+<form asp-action="CreateSchedule" method="post">
+    <div asp-validation-summary="ModelOnly" class="validation"></div>
+    <label asp-for="IdDoctor">Doctor</label>
+    <select asp-for="IdDoctor" asp-items="ViewBag.Doctores">
+        <option value="">-- Selecciona un doctor --</option>
+    </select>
+    <span asp-validation-for="IdDoctor" class="validation"></span>
+    <label asp-for="Fecha">Fecha</label>
+    <input asp-for="Fecha" type="date" />
+    <span asp-validation-for="Fecha" class="validation"></span>
+    <label asp-for="HoraInicio">Hora de inicio</label>
+    <input asp-for="HoraInicio" type="time" />
+    <span asp-validation-for="HoraInicio" class="validation"></span>
+    <label asp-for="HoraFin">Hora de finalización</label>
+    <input asp-for="HoraFin" type="time" />
+    <span asp-validation-for="HoraFin" class="validation"></span>
+    <button class="button" type="submit">Guardar horario</button>
+</form>
+</div>
