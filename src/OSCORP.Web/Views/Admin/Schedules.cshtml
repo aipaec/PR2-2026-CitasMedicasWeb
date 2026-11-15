@@ -1,0 +1,10 @@
+@model IEnumerable<Horario>
+@{ ViewData["Title"] = "Horarios"; }
+<div class="page-heading"><h1>Horarios registrados</h1>
+<a class="button" asp-action="CreateSchedule">Crear horario</a></div>
+<table><thead><tr><th>Doctor</th><th>Fecha</th><th>Desde</th><th>Hasta</th><th>Estado</th></tr></thead><tbody>
+@foreach (var h in Model) {
+<tr><td>@h.Doctor?.Usuario?.Nombre</td><td>@h.Fecha.ToString("dd/MM/yyyy")</td>
+<td>@h.HoraInicio.ToString(@"hh\:mm")</td><td>@h.HoraFin.ToString(@"hh\:mm")</td><td>@h.Estado</td></tr>
+}
+</tbody></table>
