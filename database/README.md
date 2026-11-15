@@ -21,4 +21,8 @@
 
 ## Conexión desde la aplicación
 
-La cadena de conexión debe configurarse mediante secretos de desarrollo o variables de entorno y no debe guardarse con credenciales reales en Git. La tecnología y el mecanismo exactos deben documentarse cuando se publique el proyecto .NET.
+La aplicación utiliza una cadena de conexión llamada `OscorpConnection`, definida en `src/OSCORP.Web/appsettings.json`.
+
+La configuración actual utiliza `localhost`, la base de datos `oscorp_db` y autenticación de Windows mediante `Trusted_Connection=True`.
+
+Si se utiliza otra instancia de SQL Server, se debe actualizar el servidor en la cadena de conexión. Si se utiliza autenticación mediante usuario y contraseña, las credenciales deben almacenarse mediante secretos de desarrollo o variables de entorno, evitando publicarlas en GitHub.
