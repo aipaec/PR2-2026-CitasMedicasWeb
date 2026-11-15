@@ -1,10 +1,11 @@
 # Equipo de trabajo
 
-Los perfiles individuales existentes se conservan en la carpeta raíz `equipo/`.
+Los perfiles individuales de los integrantes se encuentran en la carpeta raíz `equipo/`.
 
-Integrantes y responsabilidades registradas en el README:
-- Julio Lara Laura — Programador Principal.
-- Yury Sebastián Vasquez — Diseñador de Interfaces.
-- Jhoel Ricardo Pita Silva — Encargado de Base de Datos.
+## Integrantes y responsabilidades
 
-La distribución puede complementarse con responsables de revisión, pruebas y documentación, siempre mediante acuerdo del equipo. No se modifican aquí los perfiles individuales existentes.
+- **Julio Lara Laura:** Programador principal.
+- **Yury Sebastián Vasquez Torrico:** Desarrollador Web de interfaz.
+- **Jhoel Ricardo Pita Silva:** Desarrollador Backend y encargado de Base de Datos.
+
+La distribución de responsabilidades puede complementarse con tareas de revisión, pruebas y documentación, según los acuerdos del equipo.
