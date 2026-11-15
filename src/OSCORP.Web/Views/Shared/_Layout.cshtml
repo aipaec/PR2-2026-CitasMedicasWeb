@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - OSCORP Medical</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+<header class="topbar">
+    <a class="brand" asp-controller="Home" asp-action="Index">OSCORP <span>Medical</span></a>
+    <nav>
+        @if (User.Identity?.IsAuthenticated == true)
+        {
+            <span>Hola, @User.Identity.Name</span>
+            @if (User.IsInRole("Paciente")) { <a asp-controller="Appointments" asp-action="Index">Mis citas</a> }
+            @if (User.IsInRole("Doctor")) { <a asp-controller="Doctor" asp-action="Index">Agenda</a> }
+            @if (User.IsInRole("Administrador")) { <a asp-controller="Admin" asp-action="Index">Administración</a> }
+            <a asp-controller="Account" asp-action="Logout">Cerrar sesión</a>
+        }
+        else
+        {
+            <a asp-controller="Account" asp-action="Login">Ingresar</a>
+            <a asp-controller="Account" asp-action="Register">Crear cuenta</a>
+        }
+    </nav>
+</header>
+<main class="container">
+    @if (TempData["Mensaje"] is string message) { <div class="success">@message</div> }
+    @RenderBody()
+</main>
+<footer>OSCORP Medical · Sistema de agendamiento de citas</footer>
+</body>
+</html>
