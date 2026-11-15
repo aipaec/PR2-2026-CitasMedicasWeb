@@ -1,0 +1,12 @@
+@model IEnumerable<CitaMedica>
+@{ ViewData["Title"] = "Mis citas"; }
+<div class="page-heading"><div><h1>Mis citas médicas</h1><p>Consulta tus reservas.</p></div>
+<a class="button" asp-action="Book">Reservar una cita</a></div>
+<table><thead><tr><th>Fecha</th><th>Hora</th><th>Doctor</th><th>Estado</th><th></th></tr></thead><tbody>
+@foreach (var c in Model) {
+<tr><td>@c.Fecha.ToString("dd/MM/yyyy")</td><td>@c.Hora.ToString(@"hh\:mm")</td>
+<td>@c.Horario?.Doctor?.Usuario?.Nombre</td><td>@c.Estado</td>
+<td><a asp-action="Receipt" asp-route-id="@c.IdCita">Ver comprobante</a></td></tr>
+}
+</tbody></table>
+@if (!Model.Any()) { <p>Aún no tienes citas registradas.</p> }
