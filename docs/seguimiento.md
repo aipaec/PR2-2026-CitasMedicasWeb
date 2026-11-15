@@ -13,8 +13,8 @@ Registrar el avance real del equipo y mantener trazabilidad entre planificación
 | Planificación | planificacion.md y planificacion.png | Disponible |
 | Presentación | PDF en docs/Presentación/ | Disponible |
 | Base de datos | database/script_oscorp_db.sql | Disponible |
-| Código de aplicación | No se encontró src/ ni archivos .sln/.csproj | Pendiente de publicar |
-| Pruebas automatizadas | No se encontró tests/ | Pendiente |
+| Código de aplicación | Código C# y archivo OSCORP.Web.csproj en src/OSCORP.Web/ | Publicado; ejecución pendiente de verificar |
+| Pruebas automatizadas | Carpeta tests/ con README.md, sin pruebas automatizadas publicadas | Pendiente |
 | Automatización CI | No se encontró workflow | Pendiente |
 
 ## Registro de seguimiento
