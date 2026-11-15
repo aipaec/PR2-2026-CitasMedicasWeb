@@ -7,7 +7,6 @@
   * Julio Lara Laura
   * Yury Sebastián Vasquez
   * Jhoel Ricardo Pita Silva
-  *(Nota: Agregar tu nombre completo en esta lista antes de hacer commit)*
 
 ---
 
@@ -26,8 +25,10 @@
 ## 2. Reglas de Negocio y Participación (Min-Max)
 
 ### 2.1. Jerarquía de Usuarios por Especialización
-* **Usuario:** Centraliza las credenciales de acceso y datos base de identificación (`id_usuario`, `nombre`, `correo`, `contrasena`, `tipo_usuario`).
-* **Especialización (`Paciente`, `Doctor`, `Administrador`):** Implementada mediante herencia *Table-Per-Type* (TPT), donde `pacientes.id_paciente` y `doctores.id_doctor` actúan simultáneamente como clave primaria (`PK`) y clave foránea (`FK`) hacia `usuarios(id_usuario)` con borrado en cascada.
+
+* **Usuario:** Centraliza las credenciales de acceso y los datos básicos de identificación (`id_usuario`, `nombre`, `correo`, `contrasena`, `tipo_usuario`).
+* **Especialización (`Paciente` y `Doctor`):** Se implementa mediante tablas relacionadas con `usuarios`. Las tablas `pacientes` y `doctores` utilizan sus respectivas claves primarias (`id_paciente` y `id_doctor`) como claves foráneas hacia `usuarios(id_usuario)`, con eliminación en cascada.
+* **Administrador:** Se identifica mediante el valor `Administrador` del campo `tipo_usuario`. No tiene una tabla independiente en el script SQL actual.
 
 ### 2.2. Gestión Médica y Agenda
 * **Doctor – Pertenece – Especialidad:**
@@ -60,7 +61,7 @@
 
 ## 3. Diccionario de Entidades y Atributos (Esquema Implementado)
 
-La siguiente matriz refleja la estructura exacta implementada en `database/01_schema.sql`:
+La siguiente matriz refleja la estructura exacta implementada en `database/script_oscorp_db.sql`:
 
 | Entidad (Tabla) | Tipo | Clave Primaria (PK) | Claves Foráneas (FK) | Atributos Descriptivos y Restricciones |
 | :--- | :--- | :--- | :--- | :--- |
@@ -79,5 +80,6 @@ La siguiente matriz refleja la estructura exacta implementada en `database/01_sc
 
 ## 4. Diagrama Entidad-Relación
 
-El archivo editable y su exportación visual se encuentran en:
-* **Diagrama ER (Modelo Chen / Relacional):** `docs/diagramas/modelo-er-oscorp.drawio` *(verificar que el nombre de archivo coincida exactamente con el subido en `docs/diagramas/`)*
+La documentación del modelo de datos se encuentra en este archivo. Incluye las entidades, sus atributos, claves primarias, claves foráneas y relaciones de la base de datos OSCORP Medical.
+
+La estructura descrita debe mantenerse actualizada de acuerdo con el script SQL ubicado en `database/script_oscorp_db.sql`.
