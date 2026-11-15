@@ -2,7 +2,9 @@
 
 ## 1. Estado de la arquitectura
 
-El README declara C#, ASP.NET Core MVC, HTML, CSS, JavaScript, Bootstrap y SQL Server como tecnologías utilizadas o planificadas. En la revisión de la estructura del repositorio no se encontró una solución `.sln`, un proyecto `.csproj` ni código de aplicación bajo `src/`. Por tanto, esta documentación describe la arquitectura lógica prevista y no afirma que ya exista una implementación comprobada.
+El README declara C#, ASP.NET Core MVC, HTML, CSS, JavaScript, Bootstrap y SQL Server como tecnologías del proyecto. Actualmente, el repositorio contiene código fuente en `src/OSCORP.Web/`, incluyendo controladores, modelos, servicios, vistas y el archivo `OSCORP.Web.csproj`.
+
+La arquitectura descrita en este documento se basa en la estructura publicada. Sin embargo, todavía se debe verificar la ejecución de la aplicación y el funcionamiento de sus módulos para confirmar que todo está implementado correctamente.
 
 ## 2. Vista lógica propuesta
 
