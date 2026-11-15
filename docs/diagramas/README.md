@@ -10,4 +10,4 @@ Diagramas recomendados:
 
 Convención sugerida: `nombre-del-diagrama.ext`. Indicar fecha o versión en el documento cuando el diagrama cambie.
 
-Actualmente esta carpeta contiene solo este índice; no se afirma que los diagramas estén elaborados.
+Actualmente esta carpeta contiene la documentación del modelo entidad-relación del sistema OSCORP, publicada en formato PDF. Este documento debe mantenerse actualizado y coherente con el script de la base de datos ubicado en `database/script_oscorp_db.sql`.
