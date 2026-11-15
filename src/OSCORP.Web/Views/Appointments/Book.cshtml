@@ -1,0 +1,21 @@
+@model ReservaViewModel
+@{ ViewData["Title"] = "Reservar cita"; var horarios = ViewBag.Horarios as List<Horario> ?? new(); }
+<div class="form-card wide">
+<h1>Reservar una cita</h1>
+<p>Selecciona un horario disponible y escribe el motivo de consulta.</p>
+<form asp-action="Book" method="post">
+    <div asp-validation-summary="ModelOnly" class="validation"></div>
+    <label asp-for="IdHorario">Horario disponible</label>
+    <select asp-for="IdHorario">
+        <option value="">-- Selecciona un horario --</option>
+        @foreach (var h in horarios) {
+            <option value="@h.IdHorario">@h.Doctor?.Usuario?.Nombre · @h.Doctor?.Especialidad?.Nombre · @h.Fecha.ToString("dd/MM/yyyy") · @h.HoraInicio.ToString(@"hh\:mm") - @h.HoraFin.ToString(@"hh\:mm")</option>
+        }
+    </select>
+    <span asp-validation-for="IdHorario" class="validation"></span>
+    <label asp-for="MotivoConsulta">Motivo de consulta</label>
+    <textarea asp-for="MotivoConsulta" rows="3"></textarea>
+    <span asp-validation-for="MotivoConsulta" class="validation"></span>
+    <button class="button" type="submit">Confirmar reserva</button>
+</form>
+</div>
