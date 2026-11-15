@@ -58,4 +58,10 @@ El repositorio se utiliza para mantener organizados los documentos, archivos del
 
 ## 9. Estado del proyecto
 
-La documentación, planificación y archivos principales se encuentran organizados en el repositorio. La información sobre la ejecución y configuración de la aplicación se completará según la estructura real del có
+La documentación, planificación y archivos principales se encuentran organizados en el repositorio.
+
+El código fuente de la aplicación web está publicado en `src/OSCORP.Web/` y utiliza C# con ASP.NET Core MVC y .NET 8.
+
+La configuración y ejecución local deben verificarse siguiendo las instrucciones del README ubicado en `src/OSCORP.Web/`.
+
+Las pruebas automatizadas y la integración continua todavía están pendientes de implementación.
