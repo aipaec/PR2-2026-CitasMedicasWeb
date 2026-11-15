@@ -12,7 +12,7 @@
 
 ## 1. Herramientas y Estándares de Modelado
 
-* **Diagrams.net (Draw.io):** Construcción gráfica del diagrama Entidad-Relación en formato vectorial/XML (ubicado en `docs/diagramas/`).
+* **Markdown:** Se utiliza para documentar el modelo de datos, las entidades, sus atributos, claves primarias, claves foráneas y relaciones entre tablas.
 * **Notación Peter Chen:** Estándar conceptual utilizado para representar:
   * **Rectángulos:** Entidades fuertes y asociativas.
   * **Rombos:** Relaciones entre entidades.
@@ -44,7 +44,7 @@
   * **Regla:** Un paciente puede agendar múltiples citas médicas a lo largo del tiempo. Toda cita médica pertenece estrictamente a un único paciente.
 * **CitaMedica – Reserva – Horario:**
   * **Participación:** `CitaMedica (1,1)` — `Horario (0,1)`
-  * **Regla:** Relación `1:1` restringida mediante clave única (`UNIQUE`). Cada cita médica ocupa exactamente un bloque horario disponible, y un bloque horario solo puede estar vinculado a una cita activa.
+  * **Regla:** Cada cita médica debe estar asociada a un único horario. La restricción `UNIQUE` en `id_horario` impide que dos citas utilicen el mismo horario, incluso si una de ellas está cancelada. El estado del horario se registra mediante el campo `estado` de la tabla `horarios`.
 
 ### 2.4. Facturación y Prescripción Clínica
 * **CitaMedica – Genera – Comprobante:**
