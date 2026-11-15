@@ -1,0 +1,17 @@
+@model RegisterViewModel
+@{ ViewData["Title"] = "Crear cuenta"; }
+<div class="form-card">
+<h1>Registro de paciente</h1>
+<form asp-action="Register" method="post">
+    <div asp-validation-summary="ModelOnly" class="validation"></div>
+    <label asp-for="Nombre">Nombre completo</label><input asp-for="Nombre" />
+    <span asp-validation-for="Nombre" class="validation"></span>
+    <label asp-for="Correo">Correo electrónico</label><input asp-for="Correo" type="email" />
+    <span asp-validation-for="Correo" class="validation"></span>
+    <label asp-for="Contrasena">Contraseña (mínimo 8 caracteres)</label><input asp-for="Contrasena" />
+    <span asp-validation-for="Contrasena" class="validation"></span>
+    <label asp-for="ConfirmarContrasena">Confirmar contraseña</label><input asp-for="ConfirmarContrasena" />
+    <span asp-validation-for="ConfirmarContrasena" class="validation"></span>
+    <button class="button" type="submit">Crear cuenta</button>
+</form>
+</div>
