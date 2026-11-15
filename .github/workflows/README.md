@@ -1,14 +1,15 @@
-# Automatización CI
+# Automatización del proyecto
 
-Esta carpeta queda preparada para incorporar GitHub Actions.
+Esta carpeta está destinada a guardar los flujos de trabajo automáticos de GitHub Actions para OSCORP Medical.
 
-No se agrega todavía un workflow de compilación porque el repositorio revisado no contiene una solución `.sln` ni proyectos `.csproj`, y no se conoce la versión objetivo del SDK .NET. Crear un pipeline con esos datos inventados produciría una validación que no representa el proyecto real.
+## Estado actual
 
-Cuando se publique el código:
-1. Confirmar la versión de .NET en el proyecto.
-2. Añadir un workflow que restaure dependencias.
-3. Compilar la solución en modo Release.
-4. Ejecutar los proyectos de pruebas.
-5. Publicar los resultados como artefactos cuando sea útil.
+El repositorio contiene el proyecto ASP.NET Core MVC en `src/OSCORP.Web/`, con el archivo `OSCORP.Web.csproj`.
 
-El workflow debe fallar si la compilación o las pruebas fallan.
+Actualmente esta carpeta solo contiene este archivo informativo. Todavía no se ha publicado un flujo de trabajo automático para compilar o verificar el proyecto.
+
+## Próximos pasos
+
+Cuando se configure GitHub Actions, se podrá agregar un archivo `.yml` para automatizar la compilación del proyecto y comprobar que los cambios no produzcan errores.
+
+Por el momento, la compilación debe verificarse manualmente.
