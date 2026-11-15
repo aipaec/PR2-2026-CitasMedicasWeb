@@ -1,11 +1,25 @@
 # Código fuente de OSCORP Medical
 
-Esta carpeta está reservada para la solución y los proyectos de la aplicación.
+Esta carpeta contiene el código fuente de la aplicación web OSCORP Medical, desarrollada con C# y ASP.NET Core MVC.
 
-En la revisión actual del repositorio no se encontraron archivos `.sln` ni `.csproj`. Por eso, este README es únicamente un marcador de estructura: no contiene ni sustituye el código fuente.
+## Estructura actual
 
-Cuando se publique la aplicación:
-- Añadir la solución real de Visual Studio y sus proyectos.
-- Mantener separados, cuando corresponda, presentación, lógica de aplicación y acceso a datos.
-- No subir carpetas generadas como `bin/`, `obj/` o `.vs/`.
-- Documentar aquí cualquier decisión de organización que no sea evidente.
+El proyecto principal se encuentra en `src/OSCORP.Web/` e incluye:
+
+- `Controllers/`: controladores de la aplicación.
+- `Models/`: modelos de datos.
+- `Services/`: servicios y lógica de aplicación.
+- `ViewModels/`: modelos utilizados por las vistas.
+- `Views/`: interfaces web Razor.
+- `Data/`: contexto de acceso a datos.
+- `wwwroot/`: archivos CSS y recursos públicos.
+- `Program.cs`: configuración e inicio de la aplicación.
+- `OSCORP.Web.csproj`: archivo del proyecto .NET.
+
+## Observaciones
+
+Actualmente se encuentra publicado un proyecto `.csproj`, pero no se ha identificado una solución `.sln` en el repositorio.
+
+La ejecución y compilación de la aplicación todavía deben verificarse.
+
+No subir archivos generados como `bin/`, `obj/` o `.vs/`.
