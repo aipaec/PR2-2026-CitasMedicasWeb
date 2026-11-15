@@ -13,15 +13,11 @@ La programación de citas médicas puede presentar dificultades y tiempos de esp
 ## 3. Objetivo general y alcance
 
 Desarrollar un producto mínimo viable (MVP) en entorno web para gestionar pacientes, médicos, especialidades y programación de citas médicas.
-
 ## 4. Integrantes y responsabilidades
 
-Julio Lara Laura: Programador Principal.
-
-Yury Sebastián Vasquez: Diseñador de Interfaces.
-
-Jhoel Ricardo Pita Silva: Encargado de Base de Datos.
-
+- **Julio Lara Laura:** Programador principal.
+- **Yury Sebastián Vasquez Torrico:** Desarrollador Web de interfaz.
+- **Jhoel Ricardo Pita Silva:** Desarrollador Backend y encargado de Base de Datos.
 ## 5. Tecnologías utilizadas o planificadas
 
 Lenguaje: C#.
