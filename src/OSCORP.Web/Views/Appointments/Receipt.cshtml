@@ -1,0 +1,15 @@
+@model CitaMedica
+@{ ViewData["Title"] = "Comprobante de cita"; }
+<div class="receipt">
+    <p class="eyebrow">OSCORP MEDICAL</p><h1>Comprobante de cita médica</h1>
+    <h2>Cita N.º @Model.IdCita</h2>
+    <p><strong>Paciente:</strong> @User.Identity?.Name</p>
+    <p><strong>Doctor:</strong> @Model.Horario?.Doctor?.Usuario?.Nombre</p>
+    <p><strong>Especialidad:</strong> @Model.Horario?.Doctor?.Especialidad?.Nombre</p>
+    <p><strong>Fecha:</strong> @Model.Fecha.ToString("dd/MM/yyyy")</p>
+    <p><strong>Hora:</strong> @Model.Hora.ToString(@"hh\:mm")</p>
+    <p><strong>Motivo:</strong> @Model.MotivoConsulta</p>
+    <p><strong>Estado:</strong> @Model.Estado</p>
+    <p class="muted">Este comprobante acredita la reserva del horario. No representa un pago.</p>
+    <button class="button" onclick="window.print()">Imprimir / Guardar como PDF</button>
+</div>
