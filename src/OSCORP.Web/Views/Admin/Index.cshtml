@@ -1,0 +1,9 @@
+@{ ViewData["Title"] = "Administración"; }
+<h1>Panel de administración</h1><p>Resumen general del sistema.</p>
+<div class="stats">
+<div><strong>@ViewBag.Pacientes</strong><span>Pacientes</span></div>
+<div><strong>@ViewBag.Doctores</strong><span>Doctores</span></div>
+<div><strong>@ViewBag.Citas</strong><span>Citas</span></div>
+<div><strong>@ViewBag.Horarios</strong><span>Horarios</span></div>
+</div>
+<a class="button" asp-action="Schedules">Consultar horarios</a>
