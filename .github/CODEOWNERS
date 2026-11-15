@@ -1,0 +1,8 @@
+# Plantilla de responsables de revisión.
+# Sustituir los marcadores por nombres de usuario GitHub reales acordados por el equipo.
+# No se asignan usuarios automáticamente porque los perfiles actuales no incluyen sus handles.
+#
+# Ejemplo:
+# /docs/ @usuario-documentacion
+# /database/ @usuario-base-de-datos
+# /src/ @usuario-desarrollo
