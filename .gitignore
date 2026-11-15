@@ -1,0 +1,54 @@
+# Compilación .NET
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]rtifacts/
+[Tt]est[Rr]esult*/
+*.trx
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+*.cache
+*.pdb
+*.opendb
+*.VC.db
+
+# Rider / VS Code
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# NuGet
+*.nupkg
+.nuget/
+
+# Configuración local y secretos
+.env
+.env.*
+!.env.example
+appsettings.Development.json
+secrets.json
+*.publishsettings
+Properties/PublishProfiles/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos temporales y copias
+*.tmp
+*.temp
+*.bak
+*~
