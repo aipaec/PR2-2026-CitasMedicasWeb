@@ -1,0 +1,9 @@
+@model IEnumerable<CitaMedica>
+@{ ViewData["Title"] = "Agenda del doctor"; }
+<h1>Agenda médica</h1><p>Citas asignadas a tu perfil.</p>
+<table><thead><tr><th>Fecha</th><th>Hora</th><th>Paciente</th><th>Motivo</th><th>Estado</th></tr></thead><tbody>
+@foreach (var c in Model) {
+<tr><td>@c.Fecha.ToString("dd/MM/yyyy")</td><td>@c.Hora.ToString(@"hh\:mm")</td>
+<td>@c.Paciente?.Usuario?.Nombre</td><td>@c.MotivoConsulta</td><td>@c.Estado</td></tr>
+}
+</tbody></table>
